@@ -12,17 +12,15 @@
       <tbody>
         <tr>
           <td>101</td>
-          <td><img src="http://one.ouchn.cn/images/red_logo.png"></td>
+          <td><img src="https://res.hc-cdn.com/console-ui-common/default/logo.svg"></td>
           <td>紫砂壶</td>
           <td>
-            <div>
-              <div>茶具</div>
-            </div>
+            <MyTag></MyTag>
           </td>
         </tr>
         <tr>
           <td>102</td>
-          <td><img src="http://one.ouchn.cn/images/red_logo.png"></td>
+          <td><img src="https://res.hc-cdn.com/console-ui-common/default/logo.svg"></td>
           <td>紫砂壶</td>
           <td>
             <div>
@@ -37,6 +35,7 @@
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
+import MyTag from './components/MyTag.vue';
 
 export default {
   name: 'App',
@@ -50,7 +49,7 @@ export default {
     }
   },
   components: {
-    // HelloWorld
+    MyTag
   }
 }
 </script>
