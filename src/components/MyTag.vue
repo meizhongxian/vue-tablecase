@@ -1,6 +1,6 @@
 <template>
   <div class="mytag">
-    <input class="input" type="text" v-if="isEdit">
+    <input class="input" type="text" v-if="isEdit" ref="inp" v-focus>
     <div v-else @dblclick="handleClick">差距</div>
   </div>
 </template>
@@ -21,9 +21,9 @@ export default {
       this.isEdit = true
 
       //等dom更新完再获取焦点
-      this.$nextTick(()=>{
-        this.$refs.inp.focus()
-      })
+      // this.$nextTick(()=>{
+      //   this.$refs.inp.focus()
+      // })
     }
   }
 }
